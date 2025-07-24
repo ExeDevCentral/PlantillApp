@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Empleados</title>
+    <link rel="stylesheet" href="miStyle.css">
+    <script src="miScript.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Registro de Empleados</h1>
+        <form id="empleadoForm" autocomplete="off">
+            <label for="txtLegajo">Legajo</label>
+            <input type="text" id="txtLegajo" required>
+
+            <label for="txtNombre">Nombre</label>
+            <input type="text" id="txtNombre" required>
+
+            <label for="txtApellido">Apellido</label>
+            <input type="text" id="txtApellido" required>
+
+            <label for="txtNacimiento">Fecha de nacimiento</label>
+            <input type="date" id="txtNacimiento" required>
+
+            <label for="txtCargo">Cargo</label>
+            <input type="text" id="txtCargo" required>
+
+            <div class="botones">
+                <button type="button" onclick="agregarEmpleado()">Cargar empleado</button>
+                <button type="button" onclick="mostrarEmpleados()">Mostrar empleados</button>
+            </div>
+        </form>
+        <section id="empleadosLista"></section>
+    </main>
+</body>
+</html>
