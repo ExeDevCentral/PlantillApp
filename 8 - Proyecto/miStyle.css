@@ -123,3 +123,54 @@ tr:last-child td {
     from { opacity: 0; transform: translateY(-30px);}
     to { opacity: 1; transform: translateY(0);}
 }
+/* Mobile & Tablet Responsiveness */
+.botones {
+    display: flex;
+    gap: 12px;
+    margin-top: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.botones button {
+    flex: 1;
+    min-width: 140px;
+    min-height: 48px;
+}
+
+#empleadosLista {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    main {
+        max-width: 100% !important;
+        margin: 1rem auto !important;
+        padding: 1.5rem 1rem !important;
+        border-radius: 14px;
+        box-sizing: border-box;
+    }
+    h1 {
+        font-size: 1.45rem !important;
+    }
+    input[type="text"], input[type="date"] {
+        min-height: 46px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    .botones {
+        flex-direction: column;
+    }
+    .botones button {
+        width: 100%;
+    }
+    table {
+        font-size: 0.85rem;
+    }
+    th, td {
+        padding: 0.5rem 0.35rem;
+    }
+}
